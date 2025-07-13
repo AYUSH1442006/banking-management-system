@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  mode: 'jit',
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      animation: {
+        float: "float 3s ease-in-out infinite",
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
+      colors: {
+        gold: "#FFD700",
+        "dark-gold": "#B8860B",
+      },
+    },
+  },
+  plugins: [],
+};
